@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+}
+
+.count {
+  font-size: 40px;  
+}
+
+.click-button {
+  height: 60px;
+  width: 150px;
+  font-size: 25px;
+}
