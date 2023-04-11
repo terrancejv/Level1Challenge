@@ -3,7 +3,7 @@ import "./App.css";
 
 function App() {
   // initializes count to the saved total click count and a setter function
-  const [count, setCount] = React.useState(parseInt(localStorage.getItem("clicks")));
+  const [count, setCount] = React.useState(Number(localStorage.getItem("clicks")));
 
   // function to run when the button is clicked
   const handleClick = () => {
@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="App">
       <div className="count">
-        <p>Count: {parseInt(localStorage.getItem("clicks"))}</p>
+        <p>Count: {Number(localStorage.getItem("clicks"))}</p>
       </div>
       <button class="click-button" type="button" onClick={handleClick}>
         Click Me
